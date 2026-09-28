@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="title description">
+  <title id="title">Шар внутри интерфейса реагирует на наклон телефона</title>
+  <desc id="description">Три положения телефона: наклон влево, прямо и вправо. Шар меняет положение и направление блика с плавной задержкой.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#102b42"/>
+      <stop offset="1" stop-color="#061019"/>
+    </linearGradient>
+    <radialGradient id="glassLeft" cx="35%" cy="25%" r="75%">
+      <stop stop-color="#fff"/>
+      <stop offset=".1" stop-color="#c5f5ff"/>
+      <stop offset=".35" stop-color="#4c9ac0"/>
+      <stop offset=".75" stop-color="#17405d"/>
+      <stop offset="1" stop-color="#071622"/>
+    </radialGradient>
+    <radialGradient id="glassMiddle" cx="50%" cy="25%" r="75%">
+      <stop stop-color="#fff"/>
+      <stop offset=".1" stop-color="#c5f5ff"/>
+      <stop offset=".35" stop-color="#4c9ac0"/>
+      <stop offset=".75" stop-color="#17405d"/>
+      <stop offset="1" stop-color="#071622"/>
+    </radialGradient>
+    <radialGradient id="glassRight" cx="65%" cy="25%" r="75%">
+      <stop stop-color="#fff"/>
+      <stop offset=".1" stop-color="#c5f5ff"/>
+      <stop offset=".35" stop-color="#4c9ac0"/>
+      <stop offset=".75" stop-color="#17405d"/>
+      <stop offset="1" stop-color="#071622"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#000" flood-opacity=".6"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="360" rx="24" fill="url(#background)"/>
+  <text x="500" y="43" fill="#f2faff" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700">Шар будто находится внутри экрана</text>
+  <text x="500" y="73" fill="#a9cbe0" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Наклон телефона меняет ракурс и блик; движение догоняет жест с небольшой инерцией</text>
+  <g transform="rotate(-15 210 199)" filter="url(#shadow)">
+    <rect x="126" y="94" width="168" height="210" rx="22" fill="#030a11" stroke="#97c8e3" stroke-width="3"/>
+    <rect x="138" y="109" width="144" height="179" rx="13" fill="#12334b"/>
+    <path d="M150 267Q210 235 270 267" fill="none" stroke="#5685a1" opacity=".5"/>
+    <circle cx="194" cy="193" r="50" fill="url(#glassLeft)" stroke="#c9edff" stroke-opacity=".7"/>
+    <rect x="190" y="296" width="40" height="3" rx="2" fill="#7195aa"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="416" y="94" width="168" height="210" rx="22" fill="#030a11" stroke="#97c8e3" stroke-width="3"/>
+    <rect x="428" y="109" width="144" height="179" rx="13" fill="#12334b"/>
+    <path d="M440 267Q500 235 560 267" fill="none" stroke="#5685a1" opacity=".5"/>
+    <circle cx="500" cy="193" r="50" fill="url(#glassMiddle)" stroke="#c9edff" stroke-opacity=".7"/>
+    <rect x="480" y="296" width="40" height="3" rx="2" fill="#7195aa"/>
+  </g>
+  <g transform="rotate(15 790 199)" filter="url(#shadow)">
+    <rect x="706" y="94" width="168" height="210" rx="22" fill="#030a11" stroke="#97c8e3" stroke-width="3"/>
+    <rect x="718" y="109" width="144" height="179" rx="13" fill="#12334b"/>
+    <path d="M730 267Q790 235 850 267" fill="none" stroke="#5685a1" opacity=".5"/>
+    <circle cx="806" cy="193" r="50" fill="url(#glassRight)" stroke="#c9edff" stroke-opacity=".7"/>
+    <rect x="770" y="296" width="40" height="3" rx="2" fill="#7195aa"/>
+  </g>
+  <path d="M315 193h77m-16-11 16 11-16 11M605 193h77m-16-11 16 11-16 11" fill="none" stroke="#69d8ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="210" y="335" fill="#cce7f5" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Наклон влево</text>
+  <text x="500" y="335" fill="#cce7f5" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Исходное положение</text>
+  <text x="790" y="335" fill="#cce7f5" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Наклон вправо</text>
+</svg>
